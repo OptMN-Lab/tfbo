@@ -1,4 +1,4 @@
-# tfbo
+# Tuning-Free Bilevel Optimization
 Official implementation of "Tuning-free Bilevel Optimization"
 
 
