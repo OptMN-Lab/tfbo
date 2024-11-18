@@ -106,8 +106,8 @@ class Training():
                         p.data -= (1 / (self.coef_inner + self.eps)
                                    ) * p.grad.data.clone()
                 self.proxy_model.zero_grad()
-            else:
-                raise ValueError(f'unsupported solver {self.solver}.')
+        else:
+            raise ValueError(f'unsupported solver {self.solver}.')
         return loss
 
     def train_outer(self,
